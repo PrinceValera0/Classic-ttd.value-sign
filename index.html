@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic: TTD Value Signs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        owner: '#EF4444',
+                        coowner: '#F59E0B',
+                        admin: '#3B82F6',
+                        partner: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 10px 30px rgba(0, 0, 0, 0.08)',
+                        'hover': '0 15px 35px rgba(0, 0, 0, 0.12)',
+                    }
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .gradient-bg {
+                background: linear-gradient(135deg, #EEF2FF 0%, #F8FAFC 100%);
+            }
+            .card-gradient {
+                background: linear-gradient(145deg, #FFFFFF 0%, #F9FAFB 100%);
+            }
+            .role-tag {
+                transition: all 0.25s ease;
+            }
+            .role-tag:hover {
+                transform: translateY(-2px);
+            }
+            .table-row {
+                transition: all 0.2s ease;
+            }
+            .table-row:hover {
+                background: #F8FAFC;
+            }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen py-8 px-4 font-sans">
+    <div class="max-w-3xl mx-auto">
+        <!-- Header Section -->
+        <div class="card-gradient rounded-2xl shadow-card p-6 mb-8 flex flex-wrap items-center justify-between gap-4">
+            <h1 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-dark">
+                <i class="fa fa-star text-primary mr-2"></i>
+                Classic: TTD Value Signs
+            </h1>
+            <!-- Roblox Game Button -->
+            <a href="https://ro.blox.com/Ebh5?af_dp=roblox%3A%2F%2Fnavigation%2Fgame_details%3FgameId%3D10111611615&af_web_dp=https%3A%2F%2Fwww.roblox.com%2Fgames%2F78107992067383" class="bg-gradient-to-r from-[#00A2FF] to-[#0077CC] text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <i class="fa fa-gamepad mr-2"></i> Play Game
+            </a>
+        </div>
+
+        <!-- Owners Category -->
+        <div class="mb-10">
+            <h2 class="text-xl font-bold text-dark mb-4 flex items-center">
+                <i class="fa fa-crown text-owner mr-3"></i> Owners
+            </h2>
+            <div class="card-gradient rounded-2xl shadow-card overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-dark text-white">
+                                <th class="px-6 py-4 font-semibold">Username</th>
+                                <th class="px-6 py-4 font-semibold">Value</th>
+                                <th class="px-6 py-4 font-semibold">Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">PrinceValera0</span>
+                                        <span class="role-tag bg-owner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Owner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+100%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube + Game</td>
+                            </tr>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">ILIA222010</span>
+                                        <span class="role-tag bg-coowner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Co-Owner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+100%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">Platform + Game</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admins Category -->
+        <div class="mb-10">
+            <h2 class="text-xl font-bold text-dark mb-4 flex items-center">
+                <i class="fa fa-shield text-admin mr-3"></i> Admins
+            </h2>
+            <div class="card-gradient rounded-2xl shadow-card overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-dark text-white">
+                                <th class="px-6 py-4 font-semibold">Username</th>
+                                <th class="px-6 py-4 font-semibold">Value</th>
+                                <th class="px-6 py-4 font-semibold">Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">Hanz</span>
+                                        <span class="role-tag bg-admin/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Admin</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+55%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">Platform</td>
+                            </tr>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">TH3_R3ALS3VEN</span>
+                                        <span class="role-tag bg-admin/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Admin</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+45%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partners Category -->
+        <div class="mb-10">
+            <h2 class="text-xl font-bold text-dark mb-4 flex items-center">
+                <i class="fa fa-handshake-o text-partner mr-3"></i> Partners
+            </h2>
+            <div class="card-gradient rounded-2xl shadow-card overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-dark text-white">
+                                <th class="px-6 py-4 font-semibold">Username</th>
+                                <th class="px-6 py-4 font-semibold">Value</th>
+                                <th class="px-6 py-4 font-semibold">Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">???</span>
+                                        <span class="role-tag bg-partner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Partner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+???%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube</td>
+                            </tr>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">???</span>
+                                        <span class="role-tag bg-partner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Partner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+???%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube</td>
+                            </tr>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">???</span>
+                                        <span class="role-tag bg-partner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Partner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+???%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube</td>
+                            </tr>
+                            <tr class="table-row border-b border-gray-100">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">???</span>
+                                        <span class="role-tag bg-partner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Partner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+???%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-6 py-5">
+                                    <div class="flex flex-col">
+                                        <span class="font-medium text-dark text-lg">???</span>
+                                        <span class="role-tag bg-partner/90 text-white text-xs font-medium px-3 py-1 rounded-full w-fit mt-2">Partner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-5">
+                                    <span class="font-bold text-partner text-lg">+???%</span>
+                                </td>
+                                <td class="px-6 py-5 text-gray-600">YouTube</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
