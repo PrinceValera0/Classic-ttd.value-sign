@@ -12,4 +12,4 @@
 | SEVEN | Value | 50% |
 |-----|------------|----|
 # Partner signs
-|No one|Value|???%|
+| No one | Value | ???% |
